@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: tahoma;
+}
+.menu{
+    height: 70px;
+    box-shadow: 0 0 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center
+}
+.logo{
+    color: #1a73e8;
+}
+nav{
+    width: 40%;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    color:#ed1a37;
+
+}

@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+
+.owl-carsouel{
+    margin: 50px auto;
+}
+.owl-carsouel .card-item{
+    padding: 50px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 0px 10px;
+    text-align: center;
+    background:radial-gradient(rgba(0, 0, 0, 0.849),black);
+    color: #fff;
+    text-transform: capitalize;
+    opacity: .9;
+    position: relative;
+}
+.owl-carsouel .card-item::after{
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 10px;
+    display: block;
+    background:#fff;
+    transform: rotate(-45deg);
+    top: -10px;
+    left: -20px;
+    z-index: 100;
+}
+.owl-prev,
+.owl-next{
+    position: absolute;
+    top: 45%;
+    width: 40px;
+    height: 40px;
+    opacity: .7;
+    transform: translateY(-50%);
+}
+.fa-arrow-left,
+.fa-arrow-right{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    transition: all .4s ease;
+    font-size: 20px;
+}
+.owl-prev:hover .fa-arrow-left{
+    left: 40%;
+}
+.owl-next:hover .fa-arrow-right{
+    left: 60%;
+}
+.owl-next{
+    right: 10px;
+}
+.owl-prev{
+    left: 10px;
+}

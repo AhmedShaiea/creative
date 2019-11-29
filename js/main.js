@@ -2,6 +2,14 @@ let burger = document.querySelector(".burger");
 let menu = document.querySelector(".menu nav");
 let appBar = document.querySelector(".menu");
 let sticky = appBar.offsetTop;
+let links = document.querySelectorAll('#links li');
+
+
+links.forEach(function(item){
+  item.addEventListener('click',function(){
+    menu.classList.remove("shown-nav");
+  });
+})
 
 burger.addEventListener("click", function() {
   menu.classList.toggle("shown-nav");
@@ -20,3 +28,4 @@ window.onscroll = function() {
     appBar.classList.remove("scroll-menu");
   }
 };
+
